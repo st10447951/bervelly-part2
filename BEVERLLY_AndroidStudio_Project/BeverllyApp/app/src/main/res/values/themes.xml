@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.BeverllyApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/bev_black</item>
+        <item name="colorPrimaryVariant">@color/bev_surface</item>
+        <item name="colorOnPrimary">@color/bev_white</item>
+        <item name="colorSecondary">@color/bev_red</item>
+        <item name="colorSecondaryVariant">@color/bev_red</item>
+        <item name="colorOnSecondary">@color/bev_white</item>
+        <item name="android:colorBackground">@color/bev_light_grey</item>
+        <item name="colorSurface">@color/bev_white</item>
+        <item name="colorOnSurface">@color/bev_text</item>
+        <item name="android:statusBarColor">@color/bev_black</item>
+        <item name="android:navigationBarColor">@color/bev_white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <style name="Theme.BeverllyApp.Splash" parent="Theme.BeverllyApp">
+        <item name="android:colorBackground">@color/bev_black</item>
+        <item name="android:statusBarColor">@color/bev_black</item>
+        <item name="android:navigationBarColor">@color/bev_black</item>
+    </style>
+
+    <!-- Text styles -->
+    <style name="TextStyle.BrandTitle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/bev_black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.15</item>
+    </style>
+
+    <style name="TextStyle.SectionTitle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/bev_muted</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.12</item>
+    </style>
+
+    <style name="TextStyle.Price" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/bev_black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Button styles -->
+    <style name="Button.BevPrimary" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/bev_black</item>
+        <item name="android:textColor">@color/bev_white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+    </style>
+
+    <style name="Button.BevRed" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/bev_red</item>
+        <item name="android:textColor">@color/bev_white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+    </style>
+
+    <style name="Button.BevOutline" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/bev_black</item>
+        <item name="strokeColor">@color/bev_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+
+    <!-- Card style -->
+    <style name="Card.Product" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">14dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/bev_white</item>
+    </style>
+
+    <!-- Input style -->
+    <style name="InputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/bev_border</item>
+        <item name="hintTextColor">@color/bev_muted</item>
+        <item name="android:textColorHint">@color/bev_muted</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+    </style>
+
+</resources>

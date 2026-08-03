@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bev_light_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Success icon -->
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp">
+            <View
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_green_circle" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✓"
+                android:textSize="32sp"
+                android:textColor="@color/bev_white"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Confirmed!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/bev_black"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/tvOrderRef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/bev_red"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmation sent to thabo@email.co.za"
+            android:textSize="12sp"
+            android:textColor="@color/bev_muted"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Order tracking timeline -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/bev_white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ORDER STATUS" android:textSize="11sp" android:textStyle="bold" android:textColor="@color/bev_black" android:letterSpacing="0.08" android:layout_marginBottom="16dp"/>
+
+                <!-- Timeline row -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                    <!-- Step 1: Done -->
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                        <FrameLayout android:layout_width="28dp" android:layout_height="28dp" android:layout_gravity="center">
+                            <View android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/bg_green_circle"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓" android:textSize="12sp" android:textColor="@color/bev_white" android:layout_gravity="center"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Placed" android:textSize="10sp" android:textColor="@color/bev_muted" android:layout_marginTop="4dp" android:gravity="center"/>
+                    </LinearLayout>
+                    <View android:layout_width="0dp" android:layout_height="2dp" android:layout_weight="0.5" android:background="@color/bev_border"/>
+                    <!-- Step 2: Active -->
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                        <FrameLayout android:layout_width="28dp" android:layout_height="28dp" android:layout_gravity="center">
+                            <View android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/bg_red_circle"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⚙" android:textSize="12sp" android:textColor="@color/bev_white" android:layout_gravity="center"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Processing" android:textSize="10sp" android:textColor="@color/bev_muted" android:layout_marginTop="4dp" android:gravity="center"/>
+                    </LinearLayout>
+                    <View android:layout_width="0dp" android:layout_height="2dp" android:layout_weight="0.5" android:background="@color/bev_border"/>
+                    <!-- Step 3 -->
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                        <FrameLayout android:layout_width="28dp" android:layout_height="28dp" android:layout_gravity="center">
+                            <View android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/bg_grey_circle"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📦" android:textSize="12sp" android:layout_gravity="center"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shipped" android:textSize="10sp" android:textColor="@color/bev_muted" android:layout_marginTop="4dp" android:gravity="center"/>
+                    </LinearLayout>
+                    <View android:layout_width="0dp" android:layout_height="2dp" android:layout_weight="0.5" android:background="@color/bev_border"/>
+                    <!-- Step 4 -->
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                        <FrameLayout android:layout_width="28dp" android:layout_height="28dp" android:layout_gravity="center">
+                            <View android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/bg_grey_circle"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏠" android:textSize="12sp" android:layout_gravity="center"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delivered" android:textSize="10sp" android:textColor="@color/bev_muted" android:layout_marginTop="4dp" android:gravity="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Total paid -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/bev_white">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="16dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Total Paid" android:textSize="14sp" android:textStyle="bold" android:textColor="@color/bev_black"/>
+                <TextView android:id="@+id/tvTotalPaid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="14sp" android:textStyle="bold" android:textColor="@color/bev_red"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTrackOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Track My Order"
+            style="@style/Button.BevPrimary"
+            android:layout_marginBottom="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnContinueShopping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue Shopping"
+            style="@style/Button.BevOutline"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+</ScrollView>

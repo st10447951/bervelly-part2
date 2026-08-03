@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bev_light_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/bev_black"
+            app:title="Checkout"
+            app:titleTextColor="@color/bev_white">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_arrow_back"
+                android:padding="8dp"
+                android:layout_gravity="start" />
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <!-- Progress bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:weightSum="4">
+            <View android:layout_width="0dp" android:layout_height="4dp" android:layout_weight="1" android:background="@color/bev_black" android:layout_marginEnd="3dp"/>
+            <View android:layout_width="0dp" android:layout_height="4dp" android:layout_weight="1" android:background="@color/bev_black" android:layout_marginEnd="3dp"/>
+            <View android:layout_width="0dp" android:layout_height="4dp" android:layout_weight="1" android:background="@color/bev_border" android:layout_marginEnd="3dp"/>
+            <View android:layout_width="0dp" android:layout_height="4dp" android:layout_weight="1" android:background="@color/bev_border"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 2 of 4 — Delivery Details"
+            android:textSize="12sp"
+            android:textColor="@color/bev_muted"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Delivery Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/bev_white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DELIVERY ADDRESS" android:textSize="11sp" android:textColor="@color/bev_black" android:textStyle="bold" android:letterSpacing="0.08" android:layout_marginBottom="12dp"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="First Name" style="@style/InputStyle" android:layout_marginEnd="6dp">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etFirstName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thabo"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Last Name" style="@style/InputStyle">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etLastName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Dlamini"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Street Address" style="@style/InputStyle" android:layout_marginTop="8dp">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@+id/etAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="24 Nelson Mandela Blvd, Soweto"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="8dp">
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="City" style="@style/InputStyle" android:layout_marginEnd="6dp">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etCity" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Johannesburg"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Postal Code" style="@style/InputStyle">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etPostal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1804"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Payment Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/bev_white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PAYMENT METHOD" android:textSize="11sp" android:textColor="@color/bev_black" android:textStyle="bold" android:letterSpacing="0.08" android:layout_marginBottom="12dp"/>
+
+                <RadioGroup android:id="@+id/rgPayment" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RadioButton android:id="@+id/rbCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="💳  Credit / Debit Card" android:checked="true" android:textSize="14sp" android:layout_marginBottom="8dp"/>
+                    <RadioButton android:id="@+id/rbEFT" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🏦  EFT Bank Transfer" android:textSize="14sp" android:layout_marginBottom="8dp"/>
+                    <RadioButton android:id="@+id/rbPayfast" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="⚡  PayFast" android:textSize="14sp"/>
+                </RadioGroup>
+
+                <!-- Card fields -->
+                <LinearLayout android:id="@+id/cardFields" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="12dp">
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Card Number" style="@style/InputStyle" android:layout_marginBottom="8dp">
+                        <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:text="4242 4242 4242 4242" android:inputType="number"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Expiry" style="@style/InputStyle" android:layout_marginEnd="6dp">
+                            <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:text="12/27"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="CVV" style="@style/InputStyle">
+                            <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:text="123" android:inputType="numberPassword"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Order Summary Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/bev_light_grey">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ORDER REVIEW" android:textSize="11sp" android:textColor="@color/bev_black" android:textStyle="bold" android:letterSpacing="0.08" android:layout_marginBottom="8dp"/>
+
+                <TextView android:id="@+id/tvOrderSummary" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:textColor="@color/bev_muted" android:lineSpacingMultiplier="1.6" android:layout_marginBottom="12dp"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Total" android:textSize="14sp" android:textStyle="bold" android:textColor="@color/bev_black"/>
+                    <TextView android:id="@+id/tvOrderTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="14sp" android:textStyle="bold" android:textColor="@color/bev_red"/>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Place order -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPlaceOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✓  Place Order"
+            style="@style/Button.BevPrimary"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+</ScrollView>
