@@ -1,0 +1,2 @@
+@model Product
+<a class="product-card" asp-controller="Shop" asp-action="Details" asp-route-id="@Model.Id"><div class="product-img"><img src="~/images/@Model.Image" alt="@Model.Name">@if(Model.IsNew){<span class="badge">NEW</span>}</div><div class="category">@Model.Category</div><h3>@Model.Name</h3><b>R @Model.Price.ToString("0")</b></a>

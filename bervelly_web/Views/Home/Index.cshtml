@@ -1,0 +1,5 @@
+@{ ViewData["Title"]="Home"; var news=(List<Product>)ViewBag.NewArrivals; var trend=(List<Product>)ViewBag.Trending; }
+<section class="hero"><div><div class="eyebrow">BEVERLLY SOUTH AFRICA</div><h1>Street Meets Style</h1><p>Bold looks for the new generation.</p><a class="btn red" asp-controller="Shop" asp-action="Index">Shop Now</a></div><img src="~/images/hero_lifestyle.png" alt=""></section>
+<section class="section"><div class="section-head"><span>NEW ARRIVALS</span><a asp-controller="Shop" asp-action="Index">See all →</a></div><div class="row-products">@foreach(var p in news){<partial name="_ProductCard" model="p" />}</div></section>
+<section class="promo"><div><b>Student Special</b><small>Show your student card for 15% off</small></div><strong>15% OFF</strong></section>
+<section class="section"><div class="section-head"><span>TRENDING NOW</span></div><div class="row-products">@foreach(var p in trend){<partial name="_ProductCard" model="p" />}</div></section>

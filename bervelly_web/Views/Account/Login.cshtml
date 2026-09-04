@@ -1,0 +1,3 @@
+@model LoginViewModel
+@{ViewData["Title"]="Sign In";}
+<div class="auth"><img src="~/images/beverlly_logo.png" class="auth-logo"><span class="tag">SOUTH AFRICA</span><div class="card"><h1>Welcome Back</h1><p>Sign in to your account</p><div asp-validation-summary="ModelOnly" class="error"></div><form method="post"><label>Email Address</label><input asp-for="Email" type="email" value="thabo@email.co.za"><label>Password</label><input asp-for="Password" type="password" value="password123"><button class="btn red wide">Sign In</button></form><div class="auth-link">Don't have an account? <a asp-action="Register">Register</a></div></div></div>
