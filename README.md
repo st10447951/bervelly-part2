@@ -85,20 +85,16 @@ The main data includes:
 
 ### Android
 
-1. Open `BEVERLLY-Android` in Android Studio.
+1. Open `BervellyApp` in Android Studio.
 2. Allow Gradle to sync.
 3. Connect an Android device or start an emulator.
 4. Click **Run**.
 
 ### Web
 
-1. Open `BEVERLLY-Web` in Visual Studio.
+1. Open project `BERVELLY.sln` in Visual Studio.
 2. Restore the NuGet packages.
-3. Configure the database in `appsettings.json`.
-4. Run the project using **F5** or:
-
-```bash
-dotnet run
+3. Run the application.
 ```
 
 ## Project Goal
