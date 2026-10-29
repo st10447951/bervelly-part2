@@ -39,6 +39,11 @@ class RegisterActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            if (!email.contains("@")) {
+                Toast.makeText(this, "Please enter a valid email address containing '@'", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             if (password != confirmPassword) {
                 Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
@@ -57,8 +62,6 @@ class RegisterActivity : AppCompatActivity() {
                         address = address,
                         password = password
                     )
-                    // Insertion for user return long id if it was defined so, but our UserDao returns Unit
-                    // Let's get the user back after register to get its ID, or just use email
                     db.userDao().register(user)
                     val registeredUser = db.userDao().getUserByEmail(email)
                     if (registeredUser != null) {

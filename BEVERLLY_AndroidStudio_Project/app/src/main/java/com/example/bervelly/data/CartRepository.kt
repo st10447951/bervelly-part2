@@ -4,6 +4,7 @@ import com.example.bervelly.model.CartItem
 import com.example.bervelly.model.Order
 import com.example.bervelly.model.Product
 import androidx.lifecycle.MutableLiveData
+import com.google.firebase.database.FirebaseDatabase
 
 object CartRepository {
 
@@ -90,6 +91,38 @@ object CartRepository {
         current.add(0, order)
         orders.value = current
         clearCart()
+
+        // Save order to Firebase Realtime Database
+        try {
+            val databaseRef = FirebaseDatabase.getInstance().getReference("orders")
+            databaseRef.child(orderId).setValue(order)
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+
         return order
+    }
+
+    fun fetchOrdersFromFirebase(onResult: (List<Order>) -> Unit = {}) {
+        try {
+            val databaseRef = FirebaseDatabase.getInstance().getReference("orders")
+            databaseRef.get().addOnSuccessListener { snapshot ->
+                val fetchedOrders = mutableListOf<Order>()
+                for (child in snapshot.children) {
+                    val order = child.getValue(Order::class.java)
+                    if (order != null) {
+                        fetchedOrders.add(order)
+                    }
+                }
+                if (fetchedOrders.isNotEmpty()) {
+                    orders.value = fetchedOrders
+                }
+                onResult(fetchedOrders)
+            }.addOnFailureListener {
+                onResult(emptyList())
+            }
+        } catch (e: Exception) {
+            onResult(emptyList())
+        }
     }
 }

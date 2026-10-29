@@ -1,1 +1,0 @@
-@{ViewData["Title"]="Wishlist"; var products=(List<Product>)ViewBag.Products;}<div class="page"><h1>Wishlist</h1>@if(!products.Any()){<div class="empty"><h2>Your wishlist is empty</h2><a class="btn red" asp-controller="Shop" asp-action="Index">Shop Now</a></div>}else{<div class="grid">@foreach(var p in products){<partial name="_ProductCard" model="p" />}</div>}</div>

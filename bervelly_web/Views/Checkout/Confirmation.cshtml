@@ -1,3 +1,0 @@
-@model Order
-@{ViewData["Title"]="Order Confirmed";}
-<div class="confirmation"><div class="check">✓</div><h1>Order Confirmed!</h1><p>Thank you for shopping with BEVERLLY.</p><div class="card"><b>Order #@Model.OrderNumber</b><p>R @Model.Total.ToString("0") · @Model.Status</p><p>Delivering to: @Model.DeliveryAddress</p></div><a class="btn red" asp-controller="Orders" asp-action="Index">Track Order</a></div>

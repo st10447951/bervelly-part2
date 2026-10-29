@@ -37,6 +37,11 @@ class LoginActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            if (!email.contains("@")) {
+                Toast.makeText(this, "Please enter a valid email address containing '@'", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             lifecycleScope.launch {
                 val user = db.userDao().login(email, password)
                 if (user != null) {

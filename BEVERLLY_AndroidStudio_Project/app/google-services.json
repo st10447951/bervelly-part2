@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "887264327744",
+    "project_id": "bervelly-8976d",
+    "storage_bucket": "bervelly-8976d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887264327744:android:15a6d1f5ca52f9295c07a5",
+        "android_client_info": {
+          "package_name": "com.example.bervelly"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvkCOKq0OG-UdGEdoaPbfRIjDZYjWT5H8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
