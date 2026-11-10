@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/activity_orders.xml",
+        "source": "com.beverlly.app-main-62:/layout/activity_orders.xml"
+    },
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/activity_login.xml",
+        "source": "com.beverlly.app-main-62:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/fragment_profile.xml",
+        "source": "com.beverlly.app-main-62:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/item_product_grid.xml",
+        "source": "com.beverlly.app-main-62:/layout/item_product_grid.xml"
+    },
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/activity_order_confirmation.xml",
+        "source": "com.beverlly.app-main-62:/layout/activity_order_confirmation.xml"
+    },
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/activity_checkout.xml",
+        "source": "com.beverlly.app-main-62:/layout/activity_checkout.xml"
+    },
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/item_cart.xml",
+        "source": "com.beverlly.app-main-62:/layout/item_cart.xml"
+    },
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/activity_main.xml",
+        "source": "com.beverlly.app-main-62:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/activity_splash.xml",
+        "source": "com.beverlly.app-main-62:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/activity_register.xml",
+        "source": "com.beverlly.app-main-62:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/fragment_home.xml",
+        "source": "com.beverlly.app-main-62:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/activity_product_detail.xml",
+        "source": "com.beverlly.app-main-62:/layout/activity_product_detail.xml"
+    },
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/item_product_card.xml",
+        "source": "com.beverlly.app-main-62:/layout/item_product_card.xml"
+    },
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/fragment_wishlist.xml",
+        "source": "com.beverlly.app-main-62:/layout/fragment_wishlist.xml"
+    },
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/item_order.xml",
+        "source": "com.beverlly.app-main-62:/layout/item_order.xml"
+    },
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/fragment_catalogue.xml",
+        "source": "com.beverlly.app-main-62:/layout/fragment_catalogue.xml"
+    },
+    {
+        "merged": "com.beverlly.app-mergeDebugResources-59:/layout/fragment_cart.xml",
+        "source": "com.beverlly.app-main-62:/layout/fragment_cart.xml"
+    }
+]

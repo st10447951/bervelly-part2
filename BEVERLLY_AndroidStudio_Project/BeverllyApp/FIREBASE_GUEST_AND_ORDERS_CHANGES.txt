@@ -1,0 +1,18 @@
+BEVERLLY update notes
+
+1. The splash screen continues directly to MainActivity; browsing does not require login.
+2. Checkout still requires a real signed-in Firebase customer.
+3. The profile screen shows Guest User / Sign In / Register when signed out.
+4. Removed seeded Thabo login credentials and sample order history.
+5. Existing local ProductRepository catalogue and drawable product images were preserved unchanged.
+6. OrderRepository now stores each ordered line item (product ID/name/category, unit price, quantity, size and line total) in Firestore:
+   - orders/{orderId}
+   - users/{firebaseUid}/user_orders/{orderId}
+7. My Orders reads the signed-in customer's Firestore orders and displays item details.
+8. Firebase authentication fallback/mock sign-in was removed. Google sign-in still requires the correct Web OAuth client ID and SHA-1/SHA-256 setup.
+9. Publish firestore.rules in Firebase Console before testing checkout/order saving.
+
+Important:
+- The app's card/EFT/PayFast checkout UI is not proof of a real payment gateway. Do not treat payment as actually charged until a real provider integration is implemented and tested.
+- Existing six products in ProductRepository and their image resources were retained.
+- Build and physical-device tests are still required in Android Studio.

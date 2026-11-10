@@ -37,7 +37,18 @@ class CartFragment : Fragment() {
         CartRepository.cartItems.observe(viewLifecycleOwner) { refreshCart() }
 
         binding.btnCheckout.setOnClickListener {
-            startActivity(Intent(requireContext(), CheckoutActivity::class.java))
+            if (com.beverlly.app.data.AuthRepository.isLoggedIn()) {
+                startActivity(Intent(requireContext(), CheckoutActivity::class.java))
+            } else {
+                android.widget.Toast.makeText(
+                    requireContext(),
+                    "Please sign in or create an account to proceed to checkout 🛒",
+                    android.widget.Toast.LENGTH_LONG
+                ).show()
+                val intent = Intent(requireContext(), com.beverlly.app.ui.auth.LoginActivity::class.java)
+                intent.putExtra("EXTRA_REQUIRE_AUTH_FOR_CHECKOUT", true)
+                startActivity(intent)
+            }
         }
 
         binding.btnShopNow.setOnClickListener {

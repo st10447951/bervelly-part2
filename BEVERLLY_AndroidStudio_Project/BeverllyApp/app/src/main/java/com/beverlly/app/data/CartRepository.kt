@@ -9,27 +9,8 @@ object CartRepository {
 
     val cartItems = MutableLiveData<MutableList<CartItem>>(mutableListOf())
     val wishlistItems = MutableLiveData<MutableList<Product>>(mutableListOf())
-    val orders = MutableLiveData<MutableList<Order>>(mutableListOf(
-        Order(
-            id = "BEV-2026-0210",
-            date = "28 May 2026",
-            items = listOf(
-                CartItem(ProductRepository.products[2], 1, "M")
-            ),
-            total = 450.0,
-            status = "Delivered"
-        ),
-        Order(
-            id = "BEV-2026-0178",
-            date = "15 May 2026",
-            items = listOf(
-                CartItem(ProductRepository.products[3], 1, "L"),
-                CartItem(ProductRepository.products[0], 1, "M")
-            ),
-            total = 1249.0,
-            status = "Delivered"
-        )
-    ))
+    // No sample/demo orders: order history is populated only from real checkout records.
+    val orders = MutableLiveData<MutableList<Order>>(mutableListOf())
 
     fun addToCart(product: Product, size: String, quantity: Int = 1) {
         val current = cartItems.value ?: mutableListOf()
@@ -80,7 +61,7 @@ object CartRepository {
         val orderId = "BEV-" + (1000..9999).random()
         val order = Order(
             id = orderId,
-            date = "02 Jun 2026",
+            date = java.text.SimpleDateFormat("dd MMM yyyy, HH:mm", java.util.Locale.getDefault()).format(java.util.Date()),
             items = items,
             total = grandTotal(),
             status = "Processing",

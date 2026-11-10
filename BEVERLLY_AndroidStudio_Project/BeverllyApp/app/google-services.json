@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "231164940416",
+    "firebase_url": "https://bervelly-c8e5d-default-rtdb.firebaseio.com",
+    "project_id": "bervelly-c8e5d",
+    "storage_bucket": "bervelly-c8e5d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231164940416:android:e6c121649ee65899839665",
+        "android_client_info": {
+          "package_name": "com.beverlly.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231164940416-uo261rl8nt51io6jf11fhfa1sb8coo9j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.beverlly.app",
+            "certificate_hash": "f2a88c79f959ea44977efc6813ee71d0d5e96545"
+          }
+        },
+        {
+          "client_id": "231164940416-jqqpdmn3l170s6p7n73ksfjja3optc2e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs7ti8JgD1-RhAMoR80SPKx82THv3xnE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231164940416-jqqpdmn3l170s6p7n73ksfjja3optc2e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
