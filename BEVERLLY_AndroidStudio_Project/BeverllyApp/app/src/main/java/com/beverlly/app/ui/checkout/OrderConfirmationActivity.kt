@@ -17,9 +17,18 @@ class OrderConfirmationActivity : AppCompatActivity() {
 
         val orderId = intent.getStringExtra("ORDER_ID") ?: "BEV-0001"
         val total = intent.getDoubleExtra("ORDER_TOTAL", 0.0)
+        val email = intent.getStringExtra("ORDER_EMAIL")
+            ?.ifEmpty { null }
+            ?: com.beverlly.app.data.AuthRepository.getRegisteredEmail()
 
         binding.tvOrderRef.text = "Order #$orderId"
         binding.tvTotalPaid.text = "R ${total.toInt()}"
+
+        if (email.isNotEmpty()) {
+            binding.tvConfirmationSentTo.text = "Confirmation sent to $email"
+        } else {
+            binding.tvConfirmationSentTo.text = "Order confirmation sent"
+        }
 
         binding.btnTrackOrder.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)

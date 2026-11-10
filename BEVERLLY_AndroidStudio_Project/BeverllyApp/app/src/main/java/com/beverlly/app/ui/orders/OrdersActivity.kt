@@ -9,13 +9,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.beverlly.app.R
+import com.beverlly.app.data.AuthRepository
 import com.beverlly.app.data.CartRepository
+import com.beverlly.app.data.OrderRepository
 import com.beverlly.app.databinding.ActivityOrdersBinding
 import com.beverlly.app.model.Order
 
 class OrdersActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityOrdersBinding
+    private val ordersList = mutableListOf<Order>()
+    private lateinit var adapter: OrderAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,10 +28,18 @@ class OrdersActivity : AppCompatActivity() {
 
         binding.btnBack.setOnClickListener { finish() }
 
-        val orders = CartRepository.orders.value ?: emptyList()
-        val adapter = OrderAdapter(orders)
+        adapter = OrderAdapter(ordersList)
         binding.rvOrders.layoutManager = LinearLayoutManager(this)
         binding.rvOrders.adapter = adapter
+
+        val user = AuthRepository.getCurrentUser()
+        if (user != null && user.uid.isNotEmpty()) {
+            OrderRepository.fetchUserOrders(user.uid) { remoteOrders ->
+                ordersList.clear()
+                ordersList.addAll(remoteOrders)
+                adapter.notifyDataSetChanged()
+            }
+        }
     }
 }
 
@@ -51,16 +63,21 @@ class OrderAdapter(private val orders: List<Order>) :
     override fun onBindViewHolder(holder: OrderViewHolder, position: Int) {
         val order = orders[position]
         holder.tvRef.text = "Order #${order.id}"
-        holder.tvDate.text = order.date
-        holder.tvItems.text = order.items.joinToString(", ") {
-            "${it.product.name} ×${it.quantity}"
+        holder.tvDate.text = order.date.ifEmpty { "Recent Order" }
+        val itemsSummary = if (order.items.isNotEmpty()) {
+            order.items.joinToString("\\n") {
+                "${it.product.name} • Size ${it.size} • Qty ${it.quantity} • R ${(it.product.price * it.quantity).toInt()}"
+            }
+        } else {
+            "No item details were returned for this order."
         }
+        holder.tvItems.text = itemsSummary
         holder.tvTotal.text = "R ${order.total.toInt()}"
         holder.tvStatus.text = order.status
         holder.tvStatus.setBackgroundResource(
             when (order.status) {
                 "Delivered" -> R.drawable.bg_status_delivered
-                "Processing" -> R.drawable.bg_status_processing
+                "Processing", "Paid" -> R.drawable.bg_status_processing
                 "Shipped" -> R.drawable.bg_status_shipped
                 else -> R.drawable.bg_status_pending
             }

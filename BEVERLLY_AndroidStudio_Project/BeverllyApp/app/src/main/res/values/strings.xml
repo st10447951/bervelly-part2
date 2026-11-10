@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">BEVERLLY</string>
     <string name="tagline">SOUTH AFRICA</string>
+    <string name="default_web_client_id" translatable="false">231164940416-jqqpdmn3l170s6p7n73ksfjja3optc2e.apps.googleusercontent.com</string>
 
     <!-- Nav -->
     <string name="nav_home">Home</string>

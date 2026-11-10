@@ -52,9 +52,10 @@
             android:layout_marginBottom="8dp" />
 
         <TextView
+            android:id="@+id/tvConfirmationSentTo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Confirmation sent to thabo@email.co.za"
+            android:text="Confirmation sent"
             android:textSize="12sp"
             android:textColor="@color/bev_muted"
             android:layout_marginBottom="28dp" />

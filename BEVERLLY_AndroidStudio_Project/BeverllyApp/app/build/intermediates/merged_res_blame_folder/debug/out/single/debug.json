@@ -1,0 +1,218 @@
+[
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_activity_register.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_bg_status_pending.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/bg_status_pending.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_bg_green_pill.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/bg_green_pill.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.beverlly.app-main-62:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_bg_status_delivered.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/bg_status_delivered.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.beverlly.app-main-62:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.beverlly.app-main-62:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_ic_profile.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/ic_profile.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_item_order.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/item_order.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.beverlly.app-main-62:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_product_hoodie_wrap.png.flat",
+        "source": "com.beverlly.app-main-62:/drawable/product_hoodie_wrap.png"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_product_hoodie_red.png.flat",
+        "source": "com.beverlly.app-main-62:/drawable/product_hoodie_red.png"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_ic_heart_outline.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/ic_heart_outline.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_item_cart.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/item_cart.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_fragment_profile.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_activity_order_confirmation.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/activity_order_confirmation.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.beverlly.app-main-62:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_activity_orders.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/activity_orders.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_item_product_grid.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/item_product_grid.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_bg_red_pill.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/bg_red_pill.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_bg_green_circle.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/bg_green_circle.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_hero_lifestyle.png.flat",
+        "source": "com.beverlly.app-main-62:/drawable/hero_lifestyle.png"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_activity_splash.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_activity_product_detail.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/activity_product_detail.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_product_tee_black.png.flat",
+        "source": "com.beverlly.app-main-62:/drawable/product_tee_black.png"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_bg_grey_circle.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/bg_grey_circle.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_product_tee_snake.png.flat",
+        "source": "com.beverlly.app-main-62:/drawable/product_tee_snake.png"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_nav_item_color.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/nav_item_color.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_item_product_card.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/item_product_card.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_product_tee_white.png.flat",
+        "source": "com.beverlly.app-main-62:/drawable/product_tee_white.png"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_ic_cart.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/ic_cart.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_beverlly_logo.png.flat",
+        "source": "com.beverlly.app-main-62:/drawable/beverlly_logo.png"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_ic_shop.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/ic_shop.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_hero_lifestyle2.png.flat",
+        "source": "com.beverlly.app-main-62:/drawable/hero_lifestyle2.png"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_bg_status_processing.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/bg_status_processing.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_activity_login.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_activity_checkout.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/activity_checkout.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/navigation_nav_graph.xml.flat",
+        "source": "com.beverlly.app-main-62:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_ic_heart_filled.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/ic_heart_filled.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_fragment_wishlist.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/fragment_wishlist.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.beverlly.app-main-62:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_fragment_cart.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/fragment_cart.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.beverlly.app-main-62:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_activity_main.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_bg_white_circle.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/bg_white_circle.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_ic_home.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_ic_wishlist.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/ic_wishlist.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_bg_red_circle.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/bg_red_circle.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_ic_arrow_back.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/ic_arrow_back.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_fragment_home.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_bg_rounded_top.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/bg_rounded_top.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_product_hoodie_bw.png.flat",
+        "source": "com.beverlly.app-main-62:/drawable/product_hoodie_bw.png"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/layout_fragment_catalogue.xml.flat",
+        "source": "com.beverlly.app-main-62:/layout/fragment_catalogue.xml"
+    },
+    {
+        "merged": "com.beverlly.app-merged_res-60:/drawable_bg_status_shipped.xml.flat",
+        "source": "com.beverlly.app-main-62:/drawable/bg_status_shipped.xml"
+    }
+]

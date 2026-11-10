@@ -74,7 +74,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
-                        android:text="thabo@email.co.za" />
+                        android:text="" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -89,7 +89,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textPassword"
-                        android:text="password123" />
+                        android:text="" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.button.MaterialButton
@@ -98,6 +98,42 @@
                     android:layout_height="wrap_content"
                     android:text="Sign In"
                     style="@style/Button.BevPrimary"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Divider -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="12dp">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/bev_border" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" OR "
+                        android:textSize="12sp"
+                        android:textColor="@color/bev_muted"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/bev_border" />
+                </LinearLayout>
+
+                <!-- Google SSO Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGoogleSso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🌐  Continue with Google SSO"
+                    style="@style/Button.BevOutline"
                     android:layout_marginBottom="16dp" />
 
                 <LinearLayout
