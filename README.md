@@ -1,12 +1,11 @@
-# bervelly
+bervelly
 
-# BEVERLLY – Clothing E-Commerce Platform
+BEVERLLY – Clothing E-Commerce Platform
 
 BEVERLLY is a clothing e-commerce platform consisting of an **Android mobile application** and an **ASP.NET Core MVC web application**. Both applications provide customers with a consistent shopping experience.
 
-## Applications
-
-### Android App
+Applications
+Android App
 
 Developed using:
 
@@ -17,7 +16,7 @@ Developed using:
 * SharedPreferences
 * Material Design
 
-###  Web Application
+ Web Application
 
 Developed using:
 
@@ -28,7 +27,7 @@ Developed using:
 * HTML, CSS & JavaScript
 * Bootstrap
 
-## Features
+Features
 
 * User registration and login
 * Browse clothing products
@@ -41,14 +40,14 @@ Developed using:
 * Customer profile
 * Delivery address management
 
-### Delivery
+Delivery
 
 | Order        | Delivery Fee |
 | ------------ | -----------: |
 | R500 or more |         FREE |
 | Below R500   |          R80 |
 
-## Repository Structure
+Repository Structure
 
 ```text
 BEVERLLY/
@@ -69,7 +68,7 @@ BEVERLLY/
 └── .gitignore
 ```
 
-## Database
+Database
 
 The Android application uses **Room Database**, while the web application uses **Entity Framework Core**.
 
@@ -81,27 +80,26 @@ The main data includes:
 * Wishlists
 * Orders
 
-## Getting Started
+Getting Started
 
-### Android
+Android
 
 1. Open `BervellyApp` in Android Studio.
 2. Allow Gradle to sync.
 3. Connect an Android device or start an emulator.
 4. Click **Run**.
 
-### Web
+Web
 
 1. Open project `BERVELLY.sln` in Visual Studio.
 2. Restore the NuGet packages.
 3. Run the application.
 ```
 
-## Project Goal
+Project Goal
 
 The goal of BEVERLLY is to provide a modern clothing shopping platform across **mobile and web**, while maintaining a consistent brand, product catalogue and customer experience.
-
-## License
+License
 
 This project was developed for educational purposes.
 
