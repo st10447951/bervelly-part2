@@ -1,0 +1,6 @@
+com.beverlly.app.test.app-jetified-core-1.5.0-0 C:\Users\Petros\.gradle\caches\transforms-3\26a8a3593a50ddd77ef6b67e4333c4ed\transformed\jetified-core-1.5.0\res
+com.beverlly.app.test.app-jetified-annotation-experimental-1.3.0-1 C:\Users\Petros\.gradle\caches\transforms-3\fba4c08153100298dce3fe8e940fbdfd\transformed\jetified-annotation-experimental-1.3.0\res
+com.beverlly.app.test.app-androidTest-2 C:\Users\Petros\Downloads\bervelly-part2\BEVERLLY_AndroidStudio_Project\BeverllyApp\app\build\generated\res\resValues\androidTest\debug
+com.beverlly.app.test.app-mergeDebugAndroidTestResources-3 C:\Users\Petros\Downloads\bervelly-part2\BEVERLLY_AndroidStudio_Project\BeverllyApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.beverlly.app.test.app-mergeDebugAndroidTestResources-4 C:\Users\Petros\Downloads\bervelly-part2\BEVERLLY_AndroidStudio_Project\BeverllyApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.beverlly.app.test.app-merged_res-5 C:\Users\Petros\Downloads\bervelly-part2\BEVERLLY_AndroidStudio_Project\BeverllyApp\app\build\intermediates\merged_res\debugAndroidTest

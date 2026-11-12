@@ -1,17 +1,17 @@
-#Tue Nov 10 15:51:47 SAST 2026
-base.0=C\:\\Users\\Petros\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\Petros\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.10=C\:\\Users\\Petros\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
-base.11=C\:\\Users\\Petros\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.12=C\:\\Users\\Petros\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
-base.2=C\:\\Users\\Petros\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.3=C\:\\Users\\Petros\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
-base.4=C\:\\Users\\Petros\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
-base.5=C\:\\Users\\Petros\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.6=C\:\\Users\\Petros\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.7=C\:\\Users\\Petros\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
-base.8=C\:\\Users\\Petros\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
-base.9=C\:\\Users\\Petros\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+#Thu Nov 12 11:33:51 SAST 2026
+base.0=C\:\\Users\\Petros\\Downloads\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\Petros\\Downloads\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.10=C\:\\Users\\Petros\\Downloads\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+base.11=C\:\\Users\\Petros\\Downloads\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.12=C\:\\Users\\Petros\\Downloads\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+base.2=C\:\\Users\\Petros\\Downloads\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.3=C\:\\Users\\Petros\\Downloads\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
+base.4=C\:\\Users\\Petros\\Downloads\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.5=C\:\\Users\\Petros\\Downloads\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+base.6=C\:\\Users\\Petros\\Downloads\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.7=C\:\\Users\\Petros\\Downloads\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.8=C\:\\Users\\Petros\\Downloads\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+base.9=C\:\\Users\\Petros\\Downloads\\bervelly-part2\\BEVERLLY_AndroidStudio_Project\\BeverllyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.10=9/classes.dex
